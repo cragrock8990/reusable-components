@@ -1,0 +1,7 @@
+ animations: [
+    trigger('accordionAnimation', [
+      state('isOpen', style({ height: '*' })),
+      state('isClosed', style({ height: 0 })),
+      transition('isOpen <=> isClosed', group([animate('200ms 0.2ms ease-in-out')])),
+    ]),
+  ],
